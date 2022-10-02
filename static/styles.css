@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200;300;400&family=Carter+One&family=Nunito:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap');
 
 /********************************************* GENERAL STYLES *********************************************/
 
@@ -6,7 +6,7 @@
   --blue: #1e90ff;
   --white: #ffffff;
   --black: rgba(0, 0, 0, 0.87);
-
+  --font: 'Nunito', sans-serif;
   --font-color: rgba(255, 255, 255, 0.699);
 }
 

@@ -4,45 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/about.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <script type="text/javascript" src="../scripts.js"></script>
-    <title>Home</title>
+    <script type="text/javascript" src="scripts.js"></script>
+    <title>About</title>
 </head>
 <body>
     <div class="container">
         <header class="header box">
             <nav class="nav">
                 <ul>
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
-                    <li><a href="{{ url_for('visualizations') }}">Visualisations</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="visualizations.html">Visualisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <article class="blog box">
-            Blog
-        </article>
-        <main class="main box">
-           
+        <main class="main">
+            <section class="description">
+                <h2>How do you measure happiness</h2>
+                <br><br>
+                <h3>Seligman - different happiness factors</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br>
+                <h3>Buthan - Happiness GDP</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br>
+                <h3>Happiness data</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+            <section class="video">
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/6Pm0Mn0-jYU" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            </section>
         </main>
-        <aside class="sidebar box">
-            Aside
-        </aside>
         <footer class="footer box">
             <p>&copy; 2022 Happiness Factor | All rights reserved.</p>
         </footer>
 
     </div>
-
-
-
-
-
-
-
-
 </body>
 </html>
