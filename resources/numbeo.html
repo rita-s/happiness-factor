@@ -1,0 +1,1969 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+            <script defer src="https://www.numbeo.com/common/numbeo_standard.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/themes/redmond/jquery-ui.min.css" rel="Stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.numbeo.com/favicon.ico" />
+    <script  defer  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script  defer  src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+   <script src='https://www.gstatic.com/charts/loader.js'></script>
+<link rel="apple-touch-icon" href="https://www.numbeo.com/images/apple-touch-icon.png">
+  <script>
+  if (typeof whenDocReady === "function") {
+    // already declared, do nothing
+  } else {
+    function whenDocReady(fn) {
+      // see if DOM is already available
+      if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+      } else {
+        document.addEventListener("DOMContentLoaded", fn);
+      }
+    }
+  }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10969791-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+gtag('config', 'UA-10969791-1', {
+  'custom_map': {'dimension1': 'abTestDesign'}
+});
+
+gtag('event', 'abTestDesign_dimension', {'abTestDesign': 0, 'non_interaction': true});
+</script>
+<link rel="stylesheet" href="https://cdn.datatables.net/v/ju/dt-1.10.22/datatables.min.css"/>
+<script defer src="https://cdn.datatables.net/v/ju/dt-1.10.22/datatables.min.js"></script>
+<script data-cfasync="false" async src="https://cdn.snigelweb.com/adengine/numbeo.com/loader.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://www.numbeo.com/common/style_desktop.css" />
+
+<meta name="description" content="By Country : Cost of Living Index, Rent Index, Restaurant Prices Index, Transportation Price Index, Grocery Price Index, Local Purchasing Power Index, ...  " />
+<title>Cost of Living Index by Country 2022 Mid-Year</title>
+</head>
+
+<body>
+
+ <script>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Country');
+        data.addColumn('number', 'Cost of Living Index');
+        data.addRows([
+        ['Cambodia', 45.73],
+        ['Paraguay', 30.24],
+        ['Kazakhstan', 26.45],
+        ['Portugal', 42.18],
+        ['Syria', 25.82],
+        ['Bahamas', 88.27],
+        ['Greece', 50.23],
+        ['Latvia', 45.21],
+        ['Mongolia', 33.69],
+        ['Iran', 36.49],
+        ['Morocco', 29.71],
+        ['Panama', 48.25],
+        ['Guyana', 46.87],
+        ['Guatemala', 41.34],
+        ['Iraq', 31.81],
+        ['Chile', 37.16],
+        ['Nepal', 26.18],
+        ['Argentina', 32.13],
+        ['Ukraine', 30.70],
+        ['Tanzania', 30.13],
+        ['Belize', 49.55],
+        ['Ghana', 29.98],
+        ['Bahrain', 53.84],
+        ['India', 23.89],
+        ['Canada', 68.78],
+        ['Maldives', 54.49],
+        ['Turkey', 28.38],
+        ['Belgium', 62.80],
+        ['Namibia', 35.59],
+        ['Finland', 63.75],
+        ['Taiwan', 55.95],
+        ['North Macedonia', 28.51],
+        ['South Africa', 37.94],
+        ['Bermuda', 141.74],
+        ['Georgia', 34.85],
+        ['Jamaica', 50.75],
+        ['Peru', 30.74],
+        ['Germany', 59.62],
+        ['Puerto Rico', 64.58],
+        ['Fiji', 39.37],
+        ['Hong Kong', 76.55],
+        ['United States', 69.92],
+        ['Somalia', 31.92],
+        ['Ivory Coast', 38.24],
+        ['Thailand', 38.62],
+        ['Libya', 24.60],
+        ['Costa Rica', 43.65],
+        ['Sweden', 61.77],
+        ['Vietnam', 35.59],
+        ['Poland', 35.06],
+        ['Jordan', 47.53],
+        ['Kuwait', 46.00],
+        ['Bulgaria', 37.58],
+        ['Nigeria', 30.01],
+        ['Tunisia', 25.48],
+        ['Croatia', 43.74],
+        ['Uruguay', 59.05],
+        ['Sri Lanka', 22.41],
+        ['United Kingdom', 60.42],
+        ['United Arab Emirates', 58.01],
+        ['Kenya', 33.36],
+        ['Switzerland', 110.34],
+        ['Palestine', 50.25],
+        ['Spain', 47.51],
+        ['Lebanon', 68.53],
+        ['Brunei', 43.37],
+        ['Cuba', 54.02],
+        ['Venezuela', 41.77],
+        ['Azerbaijan', 28.33],
+        ['Czech Republic', 44.33],
+        ['Guernsey', 70.88],
+        ['Israel', 77.28],
+        ['Australia', 72.27],
+        ['Estonia', 49.47],
+        ['Myanmar', 33.14],
+        ['Cameroon', 32.50],
+        ['Cyprus', 52.48],
+        ['Malaysia', 34.41],
+        ['Iceland', 86.59],
+        ['Oman', 48.11],
+        ['Bosnia And Herzegovina', 32.24],
+        ['Armenia', 38.96],
+        ['South Korea', 66.95],
+        ['Austria', 64.11],
+        ['El Salvador', 42.94],
+        ['Luxembourg', 72.15],
+        ['Brazil', 34.81],
+        ['Algeria', 25.08],
+        ['Jersey', 80.38],
+        ['Slovenia', 47.30],
+        ['Ecuador', 35.73],
+        ['Colombia', 25.23],
+        ['Kosovo (Disputed Territory)', 25.23],
+        ['Hungary', 34.64],
+        ['Japan', 62.77],
+        ['Moldova', 28.92],
+        ['Belarus', 26.39],
+        ['Mauritius', 40.68],
+        ['Trinidad And Tobago', 53.38],
+        ['Albania', 33.60],
+        ['New Zealand', 68.96],
+        ['Italy', 58.47],
+        ['Honduras', 38.91],
+        ['Ethiopia', 41.74],
+        ['Singapore', 79.09],
+        ['Egypt', 26.27],
+        ['Bolivia', 32.57],
+        ['Malta', 57.71],
+        ['Russia', 48.07],
+        ['Saudi Arabia', 50.35],
+        ['Netherlands', 67.71],
+        ['Pakistan', 17.78],
+        ['Ireland', 66.73],
+        ['Qatar', 60.56],
+        ['China', 40.31],
+        ['Slovakia', 41.03],
+        ['France', 65.55],
+        ['Lithuania', 43.10],
+        ['Serbia', 33.35],
+        ['Kyrgyzstan', 25.83],
+        ['Romania', 34.93],
+        ['Philippines', 33.62],
+        ['Rwanda', 30.82],
+        ['Uzbekistan', 26.30],
+        ['Bangladesh', 29.28],
+        ['Barbados', 87.07],
+        ['Nicaragua', 37.17],
+        ['Norway', 85.93],
+        ['Botswana', 36.52],
+        ['Macao', 68.39],
+        ['Denmark', 73.09],
+        ['Dominican Republic', 41.97],
+        ['Zimbabwe', 42.54],
+        ['Mexico', 35.14],
+        ['Uganda', 31.41],
+        ['Montenegro', 34.74],
+        ['Indonesia', 32.20],
+        ]);
+
+        var options = {
+          colorAxis: {colors: [ '#1a9641', '#a6d96a', '#ffffbf', '#fdae61', '#d7191c'], minValue : 17, maxValue : 80.9999}
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    };
+    </script>
+
+<aside>
+<div class="top_ad">
+<div style="display: block; height: 90px; width: 100%; text-align: center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ad_in_header3 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-8993465169534557"
+     data-ad-slot="7618322317"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+</div>
+</aside>
+<nav>
+<div class="logo-and-upper-ad">
+<div class="innerWidth" id="content_and_logo">
+<table style="width: 100%;" >
+<tr>
+<td style="padding-top: 5px; padding-bottom: 7px; vertical-align: bottom;">
+<a href="https://www.numbeo.com/cost-of-living/" style="border: 0; text-decoration:none;">
+<img src="https://www.numbeo.com/images/numbeo_icon_1B3B6F.svg" style="height: 56px; padding: 0px 0px; vertical-align: bottom; border: 0;" alt="" /><img src="https://www.numbeo.com/images/numbeo_text_1B3B6F.svg" style="height: 40px; margin-left: 1em; margin-bottom: 5px; vertical-align: bottom; border: 0;" alt="NUMBEO" /></a>
+</td>
+<td style="padding-left:60px; padding-top: 1px; padding-bottom: 0px; vertical-align: middle; width: 840px; text-align: left;" >
+<div style="display: inline-block; width: 100%; margin-top: 10px; margin-bottom: 10px; text-align: left; vertical-align: bottom">
+<nav style="display: inline-block; vertical-align: middle;">
+<div class="standard_margin_inlineblock" >      <form action="https://www.numbeo.com/common/dispatcher.jsp" method="get" id="menu_dispatch_form"  style="display: inline; padding: 0; margin:0;">
+      <input type="hidden" name="where" value="https://www.numbeo.com/cost-of-living/in/" style="display: inline; padding:0; margin:0;" />
+<input id="city_selector_menu_city_id"  size="27"  type="text" placeholder="Select City" class="city-selector-menu" name="city_selector_menu_city_id" />
+<input type="hidden" id="menu_city_id" name="city_id"/>
+<input type="hidden" id="name_menu_city_id" name="name_city_id"/>
+      </form>
+</div>
+ <script>
+whenDocReady(function() {
+  	jQuery('#city_selector_menu_city_id').autocomplete({
+  	  source: 'https://www.numbeo.com/common/CitySearchJson',
+     minLength: 1,
+     delay: 3,
+     autoFocus: true,
+     select: function(event, ui) {
+         event.preventDefault();
+         $('#name_menu_city_id').val(ui.item.label);
+         $('#city_selector_menu_city_id').val(ui.item.label);
+         $('#menu_city_id').val(ui.item.value);
+jQuery('#menu_dispatch_form').submit();     },
+     focus: function(event, ui) {
+         event.preventDefault();
+     }
+	  })   .keydown(function(e){
+	    if (e.keyCode === 13){
+      if ($('#menu_city_id').val() == '') { 
+        e.preventDefault();
+      }
+      var val = $('#city_selector_menu_city_id').val();
+		   $('#name_menu_city_id').val(val);
+	   }
+  }); // end autocompleter definition
+$('#city_selector_menu_city_id').toggleClass('city-selector-menu');
+$('#city_selector_menu_city_id').toggleClass('city-selector-menu');
+ }); // end document ready 
+</script>
+</nav>
+</div>
+</td>
+</tr>
+</table>
+</div> <!-- innerWidth in header -->
+</div> <!-- logo-and-upper-ad -->
+</nav>
+<div class="innerWidth">
+<div class="dropdown-outer">
+<nav class="before-nav" >
+    <ul id="nav-one" class="nav">
+
+	<li class="dir">
+<a href="https://www.numbeo.com/cost-of-living/">Cost Of Living</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/cost-of-living/">Cost Of Living</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/comparison.jsp">Cost of Living Comparison</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/calculator.jsp">Cost of Living Calculator</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/rankings_current.jsp">Cost Of Living Index (Current)</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/rankings.jsp">Cost Of Living Index</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp">Cost Of Living Index By Country</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/estimator_main">Cost of Living Estimator</a></li>
+    <li><a href="https://www.numbeo.com/food-prices/">Food Prices</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/prices_by_city.jsp">Prices By City</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/prices_by_country.jsp">Prices By Country</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/historical-data-analysis">Historical Data Analysis</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/basket_of_goods.jsp">Basket of Goods and Services</a></li>
+    <li><a href="https://www.numbeo.com/taxi-fare/">Taxi Fare Calculator</a></li>
+    <li><a href="https://www.numbeo.com/gas-prices/">Gas Prices Calculator</a></li>
+    <li><a href="https://www.numbeo.com/common/motivation_and_methodology.jsp">Our Motivation and Methodology</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/contribute.jsp">Update Data for Your City</a></li>
+  </ul></li>
+
+	<li class="dir">
+<a href="https://www.numbeo.com/property-investment/">Property Prices</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/property-investment/">Property Prices</a></li>
+    <li><a href="https://www.numbeo.com/property-investment/comparison.jsp">Property Prices Comparison</a></li>
+    <li><a href="https://www.numbeo.com/property-investment/rankings_current.jsp">Property Price Index (Current)</a></li>
+    <li><a href="https://www.numbeo.com/property-investment/rankings.jsp">Property Price Index</a></li>
+    <li><a href="https://www.numbeo.com/property-investment/rankings_by_country.jsp">Property Price Index By Country</a></li>
+   </ul></li>
+
+	<li class="dir">
+<a href="https://www.numbeo.com/quality-of-life/">Quality Of Life</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/quality-of-life/">Quality of Life</a></li>
+    <li><a href="https://www.numbeo.com/quality-of-life/comparison.jsp">Quality of Life Comparisons</a></li>
+    <li><a href="https://www.numbeo.com/quality-of-life/rankings_current.jsp">Quality of Life Index (Current)</a></li>
+    <li><a href="https://www.numbeo.com/quality-of-life/rankings.jsp">Quality of Life Index</a></li>
+    <li><a href="https://www.numbeo.com/quality-of-life/rankings_by_country.jsp">Quality of Life Index by Country</a></li>
+    <li><a href="https://www.numbeo.com/crime/">Crime</a></li>
+    <li><a href="https://www.numbeo.com/crime/rankings_current.jsp">Crime Index (Current)</a></li>
+    <li><a href="https://www.numbeo.com/crime/rankings.jsp">Crime Index</a></li>
+    <li><a href="https://www.numbeo.com/crime/rankings_by_country.jsp">Crime Index by Country</a></li>
+    <li><a href="https://www.numbeo.com/health-care/">Health Care</a></li>
+    <li><a href="https://www.numbeo.com/health-care/rankings_current.jsp">Health Care Index (Current)</a></li>
+    <li><a href="https://www.numbeo.com/health-care/rankings.jsp">Health Care Index</a></li>
+    <li><a href="https://www.numbeo.com/health-care/rankings_by_country.jsp">Health Care Index by Country</a></li>
+    <li><a href="https://www.numbeo.com/pollution/">Pollution</a></li>
+    <li><a href="https://www.numbeo.com/pollution/rankings_current.jsp">Pollution Index (Current)</a></li>
+    <li><a href="https://www.numbeo.com/pollution/rankings.jsp">Pollution Index</a></li>
+    <li><a href="https://www.numbeo.com/pollution/rankings_by_country.jsp">Pollution Index by Country</a></li>
+     <li><a href="https://www.numbeo.com/traffic/">Traffic</a></li>
+     <li><a href="https://www.numbeo.com/traffic/rankings_current.jsp">Traffic Index (Current)</a></li>
+     <li><a href="https://www.numbeo.com/traffic/rankings.jsp">Traffic Index</a></li>
+     <li><a href="https://www.numbeo.com/traffic/rankings_by_country.jsp">Traffic Index by Country</a></li>
+	</ul></li>
+	<li class="dir">
+<a href="https://www.numbeo.com/premium/index">Premium</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/premium/commercial-license">Commercial License</a></li>
+    <li><a href="https://www.numbeo.com/premium/">Insights</a></li>
+    <li><a href="https://www.numbeo.com/common/api.jsp">API</a></li>
+	</ul></li>
+	<li class="dir">
+<a href="https://jobs.numbeo.com/jobs/">Jobs</a>
+  <ul>
+    <li><a href="https://jobs.numbeo.com/jobs/remote-jobs">Remote Jobs</a></li>
+    <li><a href="https://jobs.numbeo.com/jobs/jobs-with-relocation">Jobs with Relocation</a></li>
+    <li><a href="https://jobs.numbeo.com/jobs/post-job">Post Jobs</a></li>
+	</ul></li>
+
+
+</ul>
+<br style="clear: both"/>
+</nav>
+</div> <!-- dropdown-outer -->
+</div> <!-- innerWidth -->
+<div class="innerWidth">
+ <div class="right-ads-and-info">
+ <div class="right-ads">
+<div style="width: 300px; height: 251px">
+
+<!-- adngin-ad_float_right-0 -->
+<div id="adngin-ad_float_right-0"></div>
+
+</div>
+
+ </div>
+ </div>
+<p>
+<nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+<a href="https://www.numbeo.com/common/" class="discreet_link"><img src="https://www.numbeo.com/images/home.png" class="image_without_border hide_smaller_than_600" alt="home"/></a><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<a href="https://www.numbeo.com/cost-of-living/" itemprop="item" class="breadcrumb_link"><span itemprop="name">Cost of Living</span></a><meta itemprop="position" content="1" />
+</span> <span style="font-size: 75%; display: inline-block;">&gt;</span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+ <a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp"  itemprop="item"  class="breadcrumb_link"><span itemprop="name">Index by Country</span></a><meta itemprop="position" content="2" />
+</span></nav>
+    <h1> Cost of Living Index by Country 2022 Mid-Year</h1>
+
+
+
+
+<div id="page_container">
+<div class="regionChartDivContainer">
+<div id="chart_div" class="regionChartDiv" ></div><div class="regionChartDivLabel">
+Chart: Cost of Living Index</div>
+</div>
+
+<p>You are looking at Cost of Living Index by country 2022 Mid-Year.
+These indices are historical and they are published periodically. <br/> It's a snapshot of the current indices at a specific point in time.
+<div style="display: flex; width: 100%;">
+<div style="align-self: flex-end; "> <form method="get" class="changePageForm" action="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp">
+ Select date: <select name="title"  onchange="this.form.submit();">
+  <option value="2022-mid" selected="selected">2022 Mid-Year</option>
+  <option value="2022">2022</option>
+  <option value="2021-mid">2021 Mid-Year</option>
+  <option value="2021">2021</option>
+  <option value="2020-mid">2020 Mid-Year</option>
+  <option value="2020">2020</option>
+  <option value="2019-mid">2019 Mid-Year</option>
+  <option value="2019">2019</option>
+  <option value="2018-mid">2018 Mid-Year</option>
+  <option value="2018">2018</option>
+  <option value="2017-mid">2017 Mid-Year</option>
+  <option value="2017">2017</option>
+  <option value="2016-mid">2016 Mid-Year</option>
+  <option value="2016">2016</option>
+  <option value="2015-mid">2015 Mid-Year</option>
+  <option value="2015">2015</option>
+  <option value="2014-mid">2014 Mid-Year</option>
+  <option value="2014">2014</option>
+  <option value="2013">2013</option>
+  <option value="2012">2012</option>
+  <option value="2011">2011</option>
+  <option value="2010">2010</option>
+  <option value="2009">2009</option>
+</select>
+ </form>
+<form method="get" class="changePageForm" action="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp">
+Select display column: <input type="hidden" name="title" value="2022-mid" />
+<select name="displayColumn"  onchange="this.form.submit();">
+  <option value="-1" selected="selected" >---All columns---</option>
+  <option value="0">Cost of Living Index</option>
+  <option value="1">Rent Index</option>
+  <option value="2">Cost of Living Plus Rent Index</option>
+  <option value="3">Groceries Index</option>
+  <option value="4">Restaurant Price Index</option>
+  <option value="5">Local Purchasing Power Index</option>
+</select>
+ </form>
+<div class="select_region_links">
+<span class="ui-state-default select_region"><label>Select Region:</label></span><span class="nobreak">
+<a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?title=2022-mid&amp;region=002" class="ui-state-default region_link">Africa</a>
+</span>
+<span class="nobreak">
+<a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?title=2022-mid&amp;region=019" class="ui-state-default region_link">America</a>
+</span>
+<span class="nobreak">
+<a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?title=2022-mid&amp;region=142" class="ui-state-default region_link">Asia</a>
+</span>
+<span class="nobreak">
+<a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?title=2022-mid&amp;region=150" class="ui-state-default region_link">Europe</a>
+</span>
+<span class="nobreak">
+<a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?title=2022-mid&amp;region=009" class="ui-state-default region_link">Oceania</a>
+</span>
+</div>
+</div>
+<div style="text-align: right; flex-grow: 1; height: 100%; vertical-align: bottom; align-self: flex-end">
+<div class="new_div_indices_info">
+<a href="https://www.numbeo.com/cost-of-living/cpi_explained.jsp" title="About these indices" class="ui-state-default region_link">
+        <img src="https://www.numbeo.com/images/information.png" class="image_help" alt="Info"/> More information about these indices</a></div>
+</div>
+</div>
+
+      <table id="t2"  class="stripe row-border order-column compact" >
+<thead>
+	<tr>
+	<th><div style="font-size: 80%; vertical-align: middle;">Rank</div></th>
+		<th>Country</th>
+		<th><div style="font-size: 90%;">Cost of Living Index</div></th>
+		<th><div style="font-size: 90%;">Rent Index</div></th>
+		<th><div style="font-size: 90%;">Cost of Living Plus Rent Index</div></th>
+		<th><div style="font-size: 90%;">Groceries Index</div></th>
+		<th><div style="font-size: 90%;">Restaurant Price Index</div></th>
+		<th><div style="font-size: 90%;">Local Purchasing Power Index</div></th>
+	</tr>
+</thead>
+<tbody>
+
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bermuda</td>
+    <td style="text-align: right">141.74</td>
+    <td style="text-align: right">98.96</td>
+    <td style="text-align: right">121.39</td>
+    <td style="text-align: right">142.62</td>
+    <td style="text-align: right">144.74</td>
+    <td style="text-align: right">82.34</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Switzerland</td>
+    <td style="text-align: right">110.34</td>
+    <td style="text-align: right">50.21</td>
+    <td style="text-align: right">81.73</td>
+    <td style="text-align: right">113.35</td>
+    <td style="text-align: right">104.30</td>
+    <td style="text-align: right">116.19</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bahamas</td>
+    <td style="text-align: right">88.27</td>
+    <td style="text-align: right">38.41</td>
+    <td style="text-align: right">64.55</td>
+    <td style="text-align: right">71.92</td>
+    <td style="text-align: right">94.29</td>
+    <td style="text-align: right">44.22</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Barbados</td>
+    <td style="text-align: right">87.07</td>
+    <td style="text-align: right">21.16</td>
+    <td style="text-align: right">55.71</td>
+    <td style="text-align: right">81.73</td>
+    <td style="text-align: right">74.50</td>
+    <td style="text-align: right">32.62</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Iceland</td>
+    <td style="text-align: right">86.59</td>
+    <td style="text-align: right">35.81</td>
+    <td style="text-align: right">62.43</td>
+    <td style="text-align: right">82.44</td>
+    <td style="text-align: right">88.64</td>
+    <td style="text-align: right">82.62</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Norway</td>
+    <td style="text-align: right">85.93</td>
+    <td style="text-align: right">30.55</td>
+    <td style="text-align: right">59.59</td>
+    <td style="text-align: right">81.31</td>
+    <td style="text-align: right">87.59</td>
+    <td style="text-align: right">86.27</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jersey</td>
+    <td style="text-align: right">80.38</td>
+    <td style="text-align: right">55.37</td>
+    <td style="text-align: right">68.48</td>
+    <td style="text-align: right">64.52</td>
+    <td style="text-align: right">89.23</td>
+    <td style="text-align: right">68.72</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Singapore</td>
+    <td style="text-align: right">79.09</td>
+    <td style="text-align: right">65.09</td>
+    <td style="text-align: right">72.43</td>
+    <td style="text-align: right">71.36</td>
+    <td style="text-align: right">52.20</td>
+    <td style="text-align: right">94.65</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Israel</td>
+    <td style="text-align: right">77.28</td>
+    <td style="text-align: right">32.95</td>
+    <td style="text-align: right">56.19</td>
+    <td style="text-align: right">66.45</td>
+    <td style="text-align: right">83.92</td>
+    <td style="text-align: right">73.54</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Hong Kong</td>
+    <td style="text-align: right">76.55</td>
+    <td style="text-align: right">67.99</td>
+    <td style="text-align: right">72.48</td>
+    <td style="text-align: right">82.51</td>
+    <td style="text-align: right">53.23</td>
+    <td style="text-align: right">66.93</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Denmark</td>
+    <td style="text-align: right">73.09</td>
+    <td style="text-align: right">29.18</td>
+    <td style="text-align: right">52.21</td>
+    <td style="text-align: right">59.94</td>
+    <td style="text-align: right">81.12</td>
+    <td style="text-align: right">99.76</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Australia</td>
+    <td style="text-align: right">72.27</td>
+    <td style="text-align: right">35.67</td>
+    <td style="text-align: right">54.86</td>
+    <td style="text-align: right">72.75</td>
+    <td style="text-align: right">64.07</td>
+    <td style="text-align: right">117.56</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Luxembourg</td>
+    <td style="text-align: right">72.15</td>
+    <td style="text-align: right">47.95</td>
+    <td style="text-align: right">60.64</td>
+    <td style="text-align: right">67.30</td>
+    <td style="text-align: right">73.74</td>
+    <td style="text-align: right">96.13</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Guernsey</td>
+    <td style="text-align: right">70.88</td>
+    <td style="text-align: right">45.60</td>
+    <td style="text-align: right">58.85</td>
+    <td style="text-align: right">65.92</td>
+    <td style="text-align: right">71.79</td>
+    <td style="text-align: right">70.61</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">United States</td>
+    <td style="text-align: right">69.92</td>
+    <td style="text-align: right">46.86</td>
+    <td style="text-align: right">58.95</td>
+    <td style="text-align: right">70.06</td>
+    <td style="text-align: right">65.75</td>
+    <td style="text-align: right">99.88</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">New Zealand</td>
+    <td style="text-align: right">68.96</td>
+    <td style="text-align: right">29.43</td>
+    <td style="text-align: right">50.15</td>
+    <td style="text-align: right">67.69</td>
+    <td style="text-align: right">63.87</td>
+    <td style="text-align: right">85.02</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Canada</td>
+    <td style="text-align: right">68.78</td>
+    <td style="text-align: right">35.06</td>
+    <td style="text-align: right">52.74</td>
+    <td style="text-align: right">68.10</td>
+    <td style="text-align: right">64.28</td>
+    <td style="text-align: right">101.67</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lebanon</td>
+    <td style="text-align: right">68.53</td>
+    <td style="text-align: right">20.71</td>
+    <td style="text-align: right">45.78</td>
+    <td style="text-align: right">68.17</td>
+    <td style="text-align: right">48.91</td>
+    <td style="text-align: right">31.98</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Macao</td>
+    <td style="text-align: right">68.39</td>
+    <td style="text-align: right">36.63</td>
+    <td style="text-align: right">53.28</td>
+    <td style="text-align: right">73.60</td>
+    <td style="text-align: right">48.70</td>
+    <td style="text-align: right">72.82</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Netherlands</td>
+    <td style="text-align: right">67.71</td>
+    <td style="text-align: right">33.37</td>
+    <td style="text-align: right">51.37</td>
+    <td style="text-align: right">58.11</td>
+    <td style="text-align: right">64.70</td>
+    <td style="text-align: right">99.58</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">South Korea</td>
+    <td style="text-align: right">66.95</td>
+    <td style="text-align: right">16.47</td>
+    <td style="text-align: right">42.94</td>
+    <td style="text-align: right">84.47</td>
+    <td style="text-align: right">36.82</td>
+    <td style="text-align: right">81.30</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ireland</td>
+    <td style="text-align: right">66.73</td>
+    <td style="text-align: right">44.19</td>
+    <td style="text-align: right">56.00</td>
+    <td style="text-align: right">54.18</td>
+    <td style="text-align: right">66.72</td>
+    <td style="text-align: right">75.20</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">France</td>
+    <td style="text-align: right">65.55</td>
+    <td style="text-align: right">24.88</td>
+    <td style="text-align: right">46.20</td>
+    <td style="text-align: right">63.17</td>
+    <td style="text-align: right">63.58</td>
+    <td style="text-align: right">79.61</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Puerto Rico</td>
+    <td style="text-align: right">64.58</td>
+    <td style="text-align: right">21.59</td>
+    <td style="text-align: right">44.13</td>
+    <td style="text-align: right">66.06</td>
+    <td style="text-align: right">53.57</td>
+    <td style="text-align: right">65.41</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Austria</td>
+    <td style="text-align: right">64.11</td>
+    <td style="text-align: right">22.75</td>
+    <td style="text-align: right">44.44</td>
+    <td style="text-align: right">58.04</td>
+    <td style="text-align: right">60.66</td>
+    <td style="text-align: right">75.09</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Finland</td>
+    <td style="text-align: right">63.75</td>
+    <td style="text-align: right">21.89</td>
+    <td style="text-align: right">43.83</td>
+    <td style="text-align: right">56.42</td>
+    <td style="text-align: right">63.59</td>
+    <td style="text-align: right">91.00</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Belgium</td>
+    <td style="text-align: right">62.80</td>
+    <td style="text-align: right">21.46</td>
+    <td style="text-align: right">43.14</td>
+    <td style="text-align: right">53.17</td>
+    <td style="text-align: right">65.92</td>
+    <td style="text-align: right">86.27</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Japan</td>
+    <td style="text-align: right">62.77</td>
+    <td style="text-align: right">20.85</td>
+    <td style="text-align: right">42.83</td>
+    <td style="text-align: right">66.56</td>
+    <td style="text-align: right">35.57</td>
+    <td style="text-align: right">91.13</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sweden</td>
+    <td style="text-align: right">61.77</td>
+    <td style="text-align: right">23.05</td>
+    <td style="text-align: right">43.35</td>
+    <td style="text-align: right">54.86</td>
+    <td style="text-align: right">62.29</td>
+    <td style="text-align: right">94.93</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Qatar</td>
+    <td style="text-align: right">60.56</td>
+    <td style="text-align: right">50.37</td>
+    <td style="text-align: right">55.71</td>
+    <td style="text-align: right">51.61</td>
+    <td style="text-align: right">58.46</td>
+    <td style="text-align: right">98.13</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">United Kingdom</td>
+    <td style="text-align: right">60.42</td>
+    <td style="text-align: right">30.99</td>
+    <td style="text-align: right">46.42</td>
+    <td style="text-align: right">48.68</td>
+    <td style="text-align: right">63.73</td>
+    <td style="text-align: right">92.86</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Germany</td>
+    <td style="text-align: right">59.62</td>
+    <td style="text-align: right">25.98</td>
+    <td style="text-align: right">43.62</td>
+    <td style="text-align: right">48.63</td>
+    <td style="text-align: right">52.44</td>
+    <td style="text-align: right">102.75</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Uruguay</td>
+    <td style="text-align: right">59.05</td>
+    <td style="text-align: right">15.00</td>
+    <td style="text-align: right">38.09</td>
+    <td style="text-align: right">48.69</td>
+    <td style="text-align: right">57.73</td>
+    <td style="text-align: right">28.64</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Italy</td>
+    <td style="text-align: right">58.47</td>
+    <td style="text-align: right">20.95</td>
+    <td style="text-align: right">40.62</td>
+    <td style="text-align: right">49.91</td>
+    <td style="text-align: right">59.12</td>
+    <td style="text-align: right">58.00</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">United Arab Emirates</td>
+    <td style="text-align: right">58.01</td>
+    <td style="text-align: right">37.34</td>
+    <td style="text-align: right">48.18</td>
+    <td style="text-align: right">46.72</td>
+    <td style="text-align: right">53.87</td>
+    <td style="text-align: right">118.94</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Malta</td>
+    <td style="text-align: right">57.71</td>
+    <td style="text-align: right">24.68</td>
+    <td style="text-align: right">41.99</td>
+    <td style="text-align: right">50.77</td>
+    <td style="text-align: right">58.76</td>
+    <td style="text-align: right">44.80</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Taiwan</td>
+    <td style="text-align: right">55.95</td>
+    <td style="text-align: right">15.41</td>
+    <td style="text-align: right">36.66</td>
+    <td style="text-align: right">66.99</td>
+    <td style="text-align: right">27.04</td>
+    <td style="text-align: right">61.78</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Maldives</td>
+    <td style="text-align: right">54.49</td>
+    <td style="text-align: right">27.42</td>
+    <td style="text-align: right">41.61</td>
+    <td style="text-align: right">52.99</td>
+    <td style="text-align: right">32.27</td>
+    <td style="text-align: right">31.80</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cuba</td>
+    <td style="text-align: right">54.02</td>
+    <td style="text-align: right">16.38</td>
+    <td style="text-align: right">36.12</td>
+    <td style="text-align: right">48.39</td>
+    <td style="text-align: right">31.63</td>
+    <td style="text-align: right">1.48</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bahrain</td>
+    <td style="text-align: right">53.84</td>
+    <td style="text-align: right">27.61</td>
+    <td style="text-align: right">41.36</td>
+    <td style="text-align: right">43.46</td>
+    <td style="text-align: right">47.34</td>
+    <td style="text-align: right">60.36</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Trinidad And Tobago</td>
+    <td style="text-align: right">53.38</td>
+    <td style="text-align: right">14.14</td>
+    <td style="text-align: right">34.71</td>
+    <td style="text-align: right">52.79</td>
+    <td style="text-align: right">50.59</td>
+    <td style="text-align: right">37.35</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cyprus</td>
+    <td style="text-align: right">52.48</td>
+    <td style="text-align: right">23.37</td>
+    <td style="text-align: right">38.63</td>
+    <td style="text-align: right">43.18</td>
+    <td style="text-align: right">52.62</td>
+    <td style="text-align: right">54.47</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jamaica</td>
+    <td style="text-align: right">50.75</td>
+    <td style="text-align: right">14.82</td>
+    <td style="text-align: right">33.66</td>
+    <td style="text-align: right">52.61</td>
+    <td style="text-align: right">35.51</td>
+    <td style="text-align: right">26.25</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Saudi Arabia</td>
+    <td style="text-align: right">50.35</td>
+    <td style="text-align: right">11.29</td>
+    <td style="text-align: right">31.77</td>
+    <td style="text-align: right">42.47</td>
+    <td style="text-align: right">36.67</td>
+    <td style="text-align: right">93.26</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Palestine</td>
+    <td style="text-align: right">50.25</td>
+    <td style="text-align: right">9.51</td>
+    <td style="text-align: right">30.87</td>
+    <td style="text-align: right">44.14</td>
+    <td style="text-align: right">37.60</td>
+    <td style="text-align: right">38.81</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Greece</td>
+    <td style="text-align: right">50.23</td>
+    <td style="text-align: right">12.40</td>
+    <td style="text-align: right">32.23</td>
+    <td style="text-align: right">39.29</td>
+    <td style="text-align: right">46.17</td>
+    <td style="text-align: right">38.39</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Belize</td>
+    <td style="text-align: right">49.55</td>
+    <td style="text-align: right">11.87</td>
+    <td style="text-align: right">31.62</td>
+    <td style="text-align: right">46.24</td>
+    <td style="text-align: right">32.35</td>
+    <td style="text-align: right">41.60</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Estonia</td>
+    <td style="text-align: right">49.47</td>
+    <td style="text-align: right">14.73</td>
+    <td style="text-align: right">32.94</td>
+    <td style="text-align: right">39.65</td>
+    <td style="text-align: right">47.84</td>
+    <td style="text-align: right">60.41</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Panama</td>
+    <td style="text-align: right">48.25</td>
+    <td style="text-align: right">19.51</td>
+    <td style="text-align: right">34.58</td>
+    <td style="text-align: right">47.28</td>
+    <td style="text-align: right">40.15</td>
+    <td style="text-align: right">32.66</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Oman</td>
+    <td style="text-align: right">48.11</td>
+    <td style="text-align: right">15.39</td>
+    <td style="text-align: right">32.54</td>
+    <td style="text-align: right">45.13</td>
+    <td style="text-align: right">39.78</td>
+    <td style="text-align: right">78.78</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Russia</td>
+    <td style="text-align: right">48.07</td>
+    <td style="text-align: right">15.96</td>
+    <td style="text-align: right">32.80</td>
+    <td style="text-align: right">41.19</td>
+    <td style="text-align: right">44.20</td>
+    <td style="text-align: right">42.22</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jordan</td>
+    <td style="text-align: right">47.53</td>
+    <td style="text-align: right">8.92</td>
+    <td style="text-align: right">29.16</td>
+    <td style="text-align: right">39.89</td>
+    <td style="text-align: right">39.37</td>
+    <td style="text-align: right">32.23</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Spain</td>
+    <td style="text-align: right">47.51</td>
+    <td style="text-align: right">21.40</td>
+    <td style="text-align: right">35.09</td>
+    <td style="text-align: right">39.45</td>
+    <td style="text-align: right">47.54</td>
+    <td style="text-align: right">77.29</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Slovenia</td>
+    <td style="text-align: right">47.30</td>
+    <td style="text-align: right">15.32</td>
+    <td style="text-align: right">32.09</td>
+    <td style="text-align: right">42.06</td>
+    <td style="text-align: right">39.38</td>
+    <td style="text-align: right">57.95</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Guyana</td>
+    <td style="text-align: right">46.87</td>
+    <td style="text-align: right">8.44</td>
+    <td style="text-align: right">28.58</td>
+    <td style="text-align: right">50.31</td>
+    <td style="text-align: right">37.08</td>
+    <td style="text-align: right">19.73</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kuwait</td>
+    <td style="text-align: right">46.00</td>
+    <td style="text-align: right">27.68</td>
+    <td style="text-align: right">37.28</td>
+    <td style="text-align: right">33.26</td>
+    <td style="text-align: right">41.99</td>
+    <td style="text-align: right">81.76</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cambodia</td>
+    <td style="text-align: right">45.73</td>
+    <td style="text-align: right">13.97</td>
+    <td style="text-align: right">30.62</td>
+    <td style="text-align: right">46.00</td>
+    <td style="text-align: right">20.64</td>
+    <td style="text-align: right">13.96</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Latvia</td>
+    <td style="text-align: right">45.21</td>
+    <td style="text-align: right">10.02</td>
+    <td style="text-align: right">28.47</td>
+    <td style="text-align: right">35.94</td>
+    <td style="text-align: right">37.89</td>
+    <td style="text-align: right">49.84</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Czech Republic</td>
+    <td style="text-align: right">44.33</td>
+    <td style="text-align: right">18.27</td>
+    <td style="text-align: right">31.93</td>
+    <td style="text-align: right">37.59</td>
+    <td style="text-align: right">33.40</td>
+    <td style="text-align: right">69.94</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Croatia</td>
+    <td style="text-align: right">43.74</td>
+    <td style="text-align: right">11.63</td>
+    <td style="text-align: right">28.47</td>
+    <td style="text-align: right">37.29</td>
+    <td style="text-align: right">36.47</td>
+    <td style="text-align: right">52.79</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Costa Rica</td>
+    <td style="text-align: right">43.65</td>
+    <td style="text-align: right">13.31</td>
+    <td style="text-align: right">29.21</td>
+    <td style="text-align: right">42.40</td>
+    <td style="text-align: right">36.29</td>
+    <td style="text-align: right">38.59</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brunei</td>
+    <td style="text-align: right">43.37</td>
+    <td style="text-align: right">18.31</td>
+    <td style="text-align: right">31.45</td>
+    <td style="text-align: right">46.37</td>
+    <td style="text-align: right">27.92</td>
+    <td style="text-align: right">87.28</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lithuania</td>
+    <td style="text-align: right">43.10</td>
+    <td style="text-align: right">15.31</td>
+    <td style="text-align: right">29.88</td>
+    <td style="text-align: right">35.36</td>
+    <td style="text-align: right">39.19</td>
+    <td style="text-align: right">55.67</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">El Salvador</td>
+    <td style="text-align: right">42.94</td>
+    <td style="text-align: right">13.15</td>
+    <td style="text-align: right">28.77</td>
+    <td style="text-align: right">43.23</td>
+    <td style="text-align: right">32.35</td>
+    <td style="text-align: right">20.48</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Zimbabwe</td>
+    <td style="text-align: right">42.54</td>
+    <td style="text-align: right">9.71</td>
+    <td style="text-align: right">26.92</td>
+    <td style="text-align: right">37.68</td>
+    <td style="text-align: right">34.27</td>
+    <td style="text-align: right">17.34</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Portugal</td>
+    <td style="text-align: right">42.18</td>
+    <td style="text-align: right">20.70</td>
+    <td style="text-align: right">31.96</td>
+    <td style="text-align: right">33.80</td>
+    <td style="text-align: right">34.88</td>
+    <td style="text-align: right">47.89</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Dominican Republic</td>
+    <td style="text-align: right">41.97</td>
+    <td style="text-align: right">10.29</td>
+    <td style="text-align: right">26.90</td>
+    <td style="text-align: right">38.05</td>
+    <td style="text-align: right">34.35</td>
+    <td style="text-align: right">21.62</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Venezuela</td>
+    <td style="text-align: right">41.77</td>
+    <td style="text-align: right">8.07</td>
+    <td style="text-align: right">25.74</td>
+    <td style="text-align: right">36.08</td>
+    <td style="text-align: right">42.92</td>
+    <td style="text-align: right">12.72</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ethiopia</td>
+    <td style="text-align: right">41.74</td>
+    <td style="text-align: right">17.43</td>
+    <td style="text-align: right">30.18</td>
+    <td style="text-align: right">34.96</td>
+    <td style="text-align: right">19.49</td>
+    <td style="text-align: right">11.02</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Guatemala</td>
+    <td style="text-align: right">41.34</td>
+    <td style="text-align: right">14.93</td>
+    <td style="text-align: right">28.77</td>
+    <td style="text-align: right">40.56</td>
+    <td style="text-align: right">29.05</td>
+    <td style="text-align: right">26.88</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Slovakia</td>
+    <td style="text-align: right">41.03</td>
+    <td style="text-align: right">13.79</td>
+    <td style="text-align: right">28.07</td>
+    <td style="text-align: right">38.25</td>
+    <td style="text-align: right">30.59</td>
+    <td style="text-align: right">53.84</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Mauritius</td>
+    <td style="text-align: right">40.68</td>
+    <td style="text-align: right">9.81</td>
+    <td style="text-align: right">26.00</td>
+    <td style="text-align: right">41.08</td>
+    <td style="text-align: right">30.72</td>
+    <td style="text-align: right">29.27</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">China</td>
+    <td style="text-align: right">40.31</td>
+    <td style="text-align: right">22.13</td>
+    <td style="text-align: right">31.66</td>
+    <td style="text-align: right">42.89</td>
+    <td style="text-align: right">29.01</td>
+    <td style="text-align: right">56.24</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Fiji</td>
+    <td style="text-align: right">39.37</td>
+    <td style="text-align: right">15.10</td>
+    <td style="text-align: right">27.83</td>
+    <td style="text-align: right">44.10</td>
+    <td style="text-align: right">32.22</td>
+    <td style="text-align: right">38.72</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Armenia</td>
+    <td style="text-align: right">38.96</td>
+    <td style="text-align: right">17.55</td>
+    <td style="text-align: right">28.77</td>
+    <td style="text-align: right">33.94</td>
+    <td style="text-align: right">32.17</td>
+    <td style="text-align: right">26.04</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Honduras</td>
+    <td style="text-align: right">38.91</td>
+    <td style="text-align: right">9.11</td>
+    <td style="text-align: right">24.73</td>
+    <td style="text-align: right">33.78</td>
+    <td style="text-align: right">26.18</td>
+    <td style="text-align: right">31.41</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Thailand</td>
+    <td style="text-align: right">38.62</td>
+    <td style="text-align: right">12.54</td>
+    <td style="text-align: right">26.21</td>
+    <td style="text-align: right">40.50</td>
+    <td style="text-align: right">19.81</td>
+    <td style="text-align: right">30.82</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ivory Coast</td>
+    <td style="text-align: right">38.24</td>
+    <td style="text-align: right">13.65</td>
+    <td style="text-align: right">26.54</td>
+    <td style="text-align: right">33.43</td>
+    <td style="text-align: right">25.57</td>
+    <td style="text-align: right">7.84</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">South Africa</td>
+    <td style="text-align: right">37.94</td>
+    <td style="text-align: right">14.76</td>
+    <td style="text-align: right">26.91</td>
+    <td style="text-align: right">31.09</td>
+    <td style="text-align: right">35.01</td>
+    <td style="text-align: right">77.84</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bulgaria</td>
+    <td style="text-align: right">37.58</td>
+    <td style="text-align: right">9.57</td>
+    <td style="text-align: right">24.26</td>
+    <td style="text-align: right">33.51</td>
+    <td style="text-align: right">31.81</td>
+    <td style="text-align: right">46.90</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nicaragua</td>
+    <td style="text-align: right">37.17</td>
+    <td style="text-align: right">8.17</td>
+    <td style="text-align: right">23.37</td>
+    <td style="text-align: right">35.71</td>
+    <td style="text-align: right">25.12</td>
+    <td style="text-align: right">19.61</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Chile</td>
+    <td style="text-align: right">37.16</td>
+    <td style="text-align: right">11.41</td>
+    <td style="text-align: right">24.91</td>
+    <td style="text-align: right">34.10</td>
+    <td style="text-align: right">33.68</td>
+    <td style="text-align: right">35.79</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Botswana</td>
+    <td style="text-align: right">36.52</td>
+    <td style="text-align: right">8.33</td>
+    <td style="text-align: right">23.11</td>
+    <td style="text-align: right">32.46</td>
+    <td style="text-align: right">37.38</td>
+    <td style="text-align: right">59.92</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Iran</td>
+    <td style="text-align: right">36.49</td>
+    <td style="text-align: right">16.41</td>
+    <td style="text-align: right">26.94</td>
+    <td style="text-align: right">28.03</td>
+    <td style="text-align: right">25.36</td>
+    <td style="text-align: right">18.03</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ecuador</td>
+    <td style="text-align: right">35.73</td>
+    <td style="text-align: right">9.73</td>
+    <td style="text-align: right">23.36</td>
+    <td style="text-align: right">32.95</td>
+    <td style="text-align: right">25.81</td>
+    <td style="text-align: right">33.55</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Namibia</td>
+    <td style="text-align: right">35.59</td>
+    <td style="text-align: right">11.56</td>
+    <td style="text-align: right">24.16</td>
+    <td style="text-align: right">32.98</td>
+    <td style="text-align: right">37.44</td>
+    <td style="text-align: right">50.99</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Vietnam</td>
+    <td style="text-align: right">35.59</td>
+    <td style="text-align: right">11.73</td>
+    <td style="text-align: right">24.24</td>
+    <td style="text-align: right">36.37</td>
+    <td style="text-align: right">18.24</td>
+    <td style="text-align: right">28.18</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Mexico</td>
+    <td style="text-align: right">35.14</td>
+    <td style="text-align: right">12.05</td>
+    <td style="text-align: right">24.15</td>
+    <td style="text-align: right">34.85</td>
+    <td style="text-align: right">31.94</td>
+    <td style="text-align: right">41.10</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Poland</td>
+    <td style="text-align: right">35.06</td>
+    <td style="text-align: right">14.15</td>
+    <td style="text-align: right">25.12</td>
+    <td style="text-align: right">28.39</td>
+    <td style="text-align: right">31.40</td>
+    <td style="text-align: right">60.65</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Romania</td>
+    <td style="text-align: right">34.93</td>
+    <td style="text-align: right">9.98</td>
+    <td style="text-align: right">23.06</td>
+    <td style="text-align: right">30.54</td>
+    <td style="text-align: right">29.74</td>
+    <td style="text-align: right">48.84</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Georgia</td>
+    <td style="text-align: right">34.85</td>
+    <td style="text-align: right">15.45</td>
+    <td style="text-align: right">25.62</td>
+    <td style="text-align: right">30.42</td>
+    <td style="text-align: right">32.14</td>
+    <td style="text-align: right">25.13</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brazil</td>
+    <td style="text-align: right">34.81</td>
+    <td style="text-align: right">8.46</td>
+    <td style="text-align: right">22.28</td>
+    <td style="text-align: right">29.99</td>
+    <td style="text-align: right">25.58</td>
+    <td style="text-align: right">27.28</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Montenegro</td>
+    <td style="text-align: right">34.74</td>
+    <td style="text-align: right">11.05</td>
+    <td style="text-align: right">23.47</td>
+    <td style="text-align: right">29.19</td>
+    <td style="text-align: right">27.50</td>
+    <td style="text-align: right">37.23</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Hungary</td>
+    <td style="text-align: right">34.64</td>
+    <td style="text-align: right">11.13</td>
+    <td style="text-align: right">23.46</td>
+    <td style="text-align: right">30.85</td>
+    <td style="text-align: right">28.23</td>
+    <td style="text-align: right">53.24</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Malaysia</td>
+    <td style="text-align: right">34.41</td>
+    <td style="text-align: right">9.73</td>
+    <td style="text-align: right">22.67</td>
+    <td style="text-align: right">37.10</td>
+    <td style="text-align: right">19.85</td>
+    <td style="text-align: right">59.41</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Mongolia</td>
+    <td style="text-align: right">33.69</td>
+    <td style="text-align: right">9.10</td>
+    <td style="text-align: right">21.99</td>
+    <td style="text-align: right">34.51</td>
+    <td style="text-align: right">26.39</td>
+    <td style="text-align: right">23.62</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Philippines</td>
+    <td style="text-align: right">33.62</td>
+    <td style="text-align: right">10.34</td>
+    <td style="text-align: right">22.55</td>
+    <td style="text-align: right">33.61</td>
+    <td style="text-align: right">20.08</td>
+    <td style="text-align: right">20.06</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Albania</td>
+    <td style="text-align: right">33.60</td>
+    <td style="text-align: right">8.22</td>
+    <td style="text-align: right">21.53</td>
+    <td style="text-align: right">27.65</td>
+    <td style="text-align: right">22.94</td>
+    <td style="text-align: right">28.65</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kenya</td>
+    <td style="text-align: right">33.36</td>
+    <td style="text-align: right">7.49</td>
+    <td style="text-align: right">21.05</td>
+    <td style="text-align: right">31.39</td>
+    <td style="text-align: right">28.15</td>
+    <td style="text-align: right">32.19</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Serbia</td>
+    <td style="text-align: right">33.35</td>
+    <td style="text-align: right">7.54</td>
+    <td style="text-align: right">21.07</td>
+    <td style="text-align: right">26.79</td>
+    <td style="text-align: right">27.18</td>
+    <td style="text-align: right">41.56</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Myanmar</td>
+    <td style="text-align: right">33.14</td>
+    <td style="text-align: right">19.26</td>
+    <td style="text-align: right">26.54</td>
+    <td style="text-align: right">35.62</td>
+    <td style="text-align: right">18.18</td>
+    <td style="text-align: right">28.10</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bolivia</td>
+    <td style="text-align: right">32.57</td>
+    <td style="text-align: right">8.54</td>
+    <td style="text-align: right">21.14</td>
+    <td style="text-align: right">29.14</td>
+    <td style="text-align: right">22.99</td>
+    <td style="text-align: right">36.50</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cameroon</td>
+    <td style="text-align: right">32.50</td>
+    <td style="text-align: right">5.49</td>
+    <td style="text-align: right">19.65</td>
+    <td style="text-align: right">33.26</td>
+    <td style="text-align: right">21.47</td>
+    <td style="text-align: right">16.95</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bosnia And Herzegovina</td>
+    <td style="text-align: right">32.24</td>
+    <td style="text-align: right">5.31</td>
+    <td style="text-align: right">19.42</td>
+    <td style="text-align: right">28.57</td>
+    <td style="text-align: right">20.80</td>
+    <td style="text-align: right">46.51</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Indonesia</td>
+    <td style="text-align: right">32.20</td>
+    <td style="text-align: right">8.20</td>
+    <td style="text-align: right">20.78</td>
+    <td style="text-align: right">35.14</td>
+    <td style="text-align: right">16.73</td>
+    <td style="text-align: right">25.52</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Argentina</td>
+    <td style="text-align: right">32.13</td>
+    <td style="text-align: right">6.88</td>
+    <td style="text-align: right">20.12</td>
+    <td style="text-align: right">26.83</td>
+    <td style="text-align: right">27.99</td>
+    <td style="text-align: right">33.64</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Somalia</td>
+    <td style="text-align: right">31.92</td>
+    <td style="text-align: right">5.03</td>
+    <td style="text-align: right">19.13</td>
+    <td style="text-align: right">35.00</td>
+    <td style="text-align: right">24.82</td>
+    <td style="text-align: right">30.70</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Iraq</td>
+    <td style="text-align: right">31.81</td>
+    <td style="text-align: right">9.44</td>
+    <td style="text-align: right">21.17</td>
+    <td style="text-align: right">27.78</td>
+    <td style="text-align: right">25.89</td>
+    <td style="text-align: right">43.58</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Uganda</td>
+    <td style="text-align: right">31.41</td>
+    <td style="text-align: right">9.03</td>
+    <td style="text-align: right">20.76</td>
+    <td style="text-align: right">28.69</td>
+    <td style="text-align: right">22.04</td>
+    <td style="text-align: right">11.76</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Rwanda</td>
+    <td style="text-align: right">30.82</td>
+    <td style="text-align: right">13.39</td>
+    <td style="text-align: right">22.53</td>
+    <td style="text-align: right">26.69</td>
+    <td style="text-align: right">25.02</td>
+    <td style="text-align: right">26.30</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Peru</td>
+    <td style="text-align: right">30.74</td>
+    <td style="text-align: right">10.18</td>
+    <td style="text-align: right">20.95</td>
+    <td style="text-align: right">29.23</td>
+    <td style="text-align: right">20.23</td>
+    <td style="text-align: right">28.52</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ukraine</td>
+    <td style="text-align: right">30.70</td>
+    <td style="text-align: right">10.79</td>
+    <td style="text-align: right">21.22</td>
+    <td style="text-align: right">27.11</td>
+    <td style="text-align: right">26.24</td>
+    <td style="text-align: right">36.29</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Paraguay</td>
+    <td style="text-align: right">30.24</td>
+    <td style="text-align: right">9.52</td>
+    <td style="text-align: right">20.38</td>
+    <td style="text-align: right">26.15</td>
+    <td style="text-align: right">22.37</td>
+    <td style="text-align: right">25.45</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tanzania</td>
+    <td style="text-align: right">30.13</td>
+    <td style="text-align: right">10.09</td>
+    <td style="text-align: right">20.60</td>
+    <td style="text-align: right">28.20</td>
+    <td style="text-align: right">21.42</td>
+    <td style="text-align: right">17.67</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nigeria</td>
+    <td style="text-align: right">30.01</td>
+    <td style="text-align: right">32.85</td>
+    <td style="text-align: right">31.36</td>
+    <td style="text-align: right">33.07</td>
+    <td style="text-align: right">20.00</td>
+    <td style="text-align: right">8.25</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ghana</td>
+    <td style="text-align: right">29.98</td>
+    <td style="text-align: right">17.93</td>
+    <td style="text-align: right">24.25</td>
+    <td style="text-align: right">31.08</td>
+    <td style="text-align: right">22.73</td>
+    <td style="text-align: right">17.06</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Morocco</td>
+    <td style="text-align: right">29.71</td>
+    <td style="text-align: right">7.27</td>
+    <td style="text-align: right">19.03</td>
+    <td style="text-align: right">26.43</td>
+    <td style="text-align: right">20.40</td>
+    <td style="text-align: right">32.67</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bangladesh</td>
+    <td style="text-align: right">29.28</td>
+    <td style="text-align: right">3.57</td>
+    <td style="text-align: right">17.05</td>
+    <td style="text-align: right">27.95</td>
+    <td style="text-align: right">17.55</td>
+    <td style="text-align: right">25.34</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Moldova</td>
+    <td style="text-align: right">28.92</td>
+    <td style="text-align: right">7.40</td>
+    <td style="text-align: right">18.68</td>
+    <td style="text-align: right">24.44</td>
+    <td style="text-align: right">23.96</td>
+    <td style="text-align: right">33.37</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">North Macedonia</td>
+    <td style="text-align: right">28.51</td>
+    <td style="text-align: right">5.05</td>
+    <td style="text-align: right">17.35</td>
+    <td style="text-align: right">24.75</td>
+    <td style="text-align: right">19.43</td>
+    <td style="text-align: right">35.57</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Turkey</td>
+    <td style="text-align: right">28.38</td>
+    <td style="text-align: right">6.48</td>
+    <td style="text-align: right">17.96</td>
+    <td style="text-align: right">23.70</td>
+    <td style="text-align: right">17.25</td>
+    <td style="text-align: right">28.04</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Azerbaijan</td>
+    <td style="text-align: right">28.33</td>
+    <td style="text-align: right">6.40</td>
+    <td style="text-align: right">17.90</td>
+    <td style="text-align: right">25.66</td>
+    <td style="text-align: right">24.95</td>
+    <td style="text-align: right">29.36</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kazakhstan</td>
+    <td style="text-align: right">26.45</td>
+    <td style="text-align: right">8.39</td>
+    <td style="text-align: right">17.86</td>
+    <td style="text-align: right">23.73</td>
+    <td style="text-align: right">25.19</td>
+    <td style="text-align: right">35.23</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Belarus</td>
+    <td style="text-align: right">26.39</td>
+    <td style="text-align: right">8.32</td>
+    <td style="text-align: right">17.80</td>
+    <td style="text-align: right">24.17</td>
+    <td style="text-align: right">25.80</td>
+    <td style="text-align: right">32.31</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Uzbekistan</td>
+    <td style="text-align: right">26.30</td>
+    <td style="text-align: right">9.84</td>
+    <td style="text-align: right">18.47</td>
+    <td style="text-align: right">25.31</td>
+    <td style="text-align: right">22.58</td>
+    <td style="text-align: right">24.06</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Egypt</td>
+    <td style="text-align: right">26.27</td>
+    <td style="text-align: right">5.49</td>
+    <td style="text-align: right">16.39</td>
+    <td style="text-align: right">24.62</td>
+    <td style="text-align: right">22.05</td>
+    <td style="text-align: right">21.72</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nepal</td>
+    <td style="text-align: right">26.18</td>
+    <td style="text-align: right">3.79</td>
+    <td style="text-align: right">15.53</td>
+    <td style="text-align: right">24.61</td>
+    <td style="text-align: right">18.10</td>
+    <td style="text-align: right">19.97</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kyrgyzstan</td>
+    <td style="text-align: right">25.83</td>
+    <td style="text-align: right">7.63</td>
+    <td style="text-align: right">17.17</td>
+    <td style="text-align: right">25.43</td>
+    <td style="text-align: right">21.08</td>
+    <td style="text-align: right">23.94</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Syria</td>
+    <td style="text-align: right">25.82</td>
+    <td style="text-align: right">4.44</td>
+    <td style="text-align: right">15.65</td>
+    <td style="text-align: right">23.66</td>
+    <td style="text-align: right">18.27</td>
+    <td style="text-align: right">5.72</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tunisia</td>
+    <td style="text-align: right">25.48</td>
+    <td style="text-align: right">4.89</td>
+    <td style="text-align: right">15.69</td>
+    <td style="text-align: right">24.91</td>
+    <td style="text-align: right">14.13</td>
+    <td style="text-align: right">28.62</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Colombia</td>
+    <td style="text-align: right">25.23</td>
+    <td style="text-align: right">7.82</td>
+    <td style="text-align: right">16.95</td>
+    <td style="text-align: right">22.98</td>
+    <td style="text-align: right">18.30</td>
+    <td style="text-align: right">28.27</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kosovo (Disputed Territory)</td>
+    <td style="text-align: right">25.23</td>
+    <td style="text-align: right">6.85</td>
+    <td style="text-align: right">16.49</td>
+    <td style="text-align: right">23.50</td>
+    <td style="text-align: right">15.92</td>
+    <td style="text-align: right">38.91</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Algeria</td>
+    <td style="text-align: right">25.08</td>
+    <td style="text-align: right">3.84</td>
+    <td style="text-align: right">14.98</td>
+    <td style="text-align: right">27.36</td>
+    <td style="text-align: right">12.50</td>
+    <td style="text-align: right">25.42</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Libya</td>
+    <td style="text-align: right">24.60</td>
+    <td style="text-align: right">5.05</td>
+    <td style="text-align: right">15.30</td>
+    <td style="text-align: right">24.87</td>
+    <td style="text-align: right">19.73</td>
+    <td style="text-align: right">30.05</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">India</td>
+    <td style="text-align: right">23.89</td>
+    <td style="text-align: right">6.15</td>
+    <td style="text-align: right">15.45</td>
+    <td style="text-align: right">25.56</td>
+    <td style="text-align: right">16.44</td>
+    <td style="text-align: right">76.44</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sri Lanka</td>
+    <td style="text-align: right">22.41</td>
+    <td style="text-align: right">5.66</td>
+    <td style="text-align: right">14.45</td>
+    <td style="text-align: right">26.85</td>
+    <td style="text-align: right">10.97</td>
+    <td style="text-align: right">15.28</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Pakistan</td>
+    <td style="text-align: right">17.78</td>
+    <td style="text-align: right">3.43</td>
+    <td style="text-align: right">10.95</td>
+    <td style="text-align: right">15.77</td>
+    <td style="text-align: right">13.55</td>
+    <td style="text-align: right">24.45</td>
+ </tr>
+
+    </tbody>
+</table>
+    <script>
+    whenDocReady(function() {
+    var t_t2 = $('#t2').DataTable({
+  'columnDefs': [ {
+      'searchable': false,
+      'orderable': false,
+      'targets': 0
+  } ],
+        'paging': false,
+        'order': [[ 2, "desc" ]]
+,    });
+    t_t2.on( 'order.dt search.dt', function () {
+        t_t2.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
+  });
+</script>
+
+</div>
+<div class="standard_margin">
+
+
+<!-- adngin-ad_bottom_real_end-0 -->
+<div id="adngin-ad_bottom_real_end-0"></div>
+
+
+</div>
+
+<div style="display: flex;" class="flex_for_limit_ad_start_container"><div style="width: 100%; flex: 1; margin-right: 20px; " class="limit_size_ad_right flex_left_limit_size_ad_right">
+<div class="standard_margin">
+<div class="chart_bar"><script>
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(rankings_curr);
+      function rankings_curr() {
+      var data = google.visualization.arrayToDataTable([
+                ['City', 'Cost of Living Index', { role: 'style' }],
+          ['United States', 69.92, 'color: #4D89F9'],
+          ['China', 40.31, 'color: #4D89F9'],
+          ['United Kingdom', 60.42, 'color: #4D89F9'],
+          ['Russia', 48.07, 'color: #4D89F9'],
+          ['Germany', 59.62, 'color: #4D89F9'],
+          ['France', 65.55, 'color: #4D89F9'],
+          ['Japan', 62.77, 'color: #4D89F9'],
+          ['Italy', 58.47, 'color: #4D89F9'],
+          ['Canada', 68.78, 'color: #4D89F9']
+        ]);
+
+        var options = {
+          title: 'Cost of Living Index By Country 2022 Mid-Year', 
+          backgroundColor: 'transparent',
+          legend : { textStyle: { color : '#f1FDFE'}},
+          fontName: 'sans-serif' ,
+          titleTextStyle: { fontSize: 14} ,
+          chartArea: {left:50,top:35, right:10, bottom:50, width:'96%', height:'60%'  },
+          vAxis: { minValue:0 }
+
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('rankings_curr_div'));
+        chart.draw(data, options);
+      }
+    </script>
+<div id="rankings_curr_div" class="bar_chart_could_be_big"></div></div>
+</div>
+
+<div class="green_box relocation_links">
+<p>Other country rankings by Numbeo: 
+<ul>
+<li><a href="https://www.numbeo.com/quality-of-life/rankings_by_country.jsp">Quality of Life Index by Country 2022 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/crime/rankings_by_country.jsp">Crime Index by Country 2022 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/health-care/rankings_by_country.jsp">Health Care Index by Country 2022 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/pollution/rankings_by_country.jsp">Pollution Index by Country 2022 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/property-investment/rankings_by_country.jsp">Property Prices Index by Country 2022 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/traffic/rankings_by_country.jsp">Traffic Index by Country 2022 Mid-Year</a></li>
+</ul>
+</div>
+<div class="green_box green_box_fit_content">This page in other languages: <p><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/de.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Deutsch</span><span class="align_next_to_lang_icon"><a href="https://de.numbeo.com/lebenshaltungskosten/ranking-nach-land">Lebenshaltungskosten-Index nach Land 2022 Unter dem Jahr</a>
+</span>
+<br><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/pt.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Português</span><span class="align_next_to_lang_icon"><a href="https://pt.numbeo.com/custo-de-vida/classifica%C3%A7%C3%B5es-por-pa%C3%ADs">Indicador de Custo de Vida por País 2022 Meio do Ano</a>
+</span>
+<br><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/it.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Italiano</span><span class="align_next_to_lang_icon"><a href="https://it.numbeo.com/costo-della-vita/graduatoria-per-nazione">Indice del Costo della Vita per Nazione 2022 Metà Anno</a>
+</span>
+<br><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/fr.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Français</span><span class="align_next_to_lang_icon"><a href="https://fr.numbeo.com/co%C3%BBt-de-la-vie/classements-par-pays">Indice du Coût de la Vie par Pays 2022 Milieu de l'année</a>
+</span>
+<br><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/es.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Español</span><span class="align_next_to_lang_icon"><a href="https://es.numbeo.com/coste-de-vida/clasificaciones-por-pa%C3%ADs">Índice de Coste Vida por País 2022 Mitad de año</a>
+</span>
+</div>
+</div><div style="width: 300px; text-align: right; vertical-align: top; padding-top: 12px">
+<!-- adngin-ad_next_to_distribution2-0 -->
+<div id="adngin-ad_next_to_distribution2-0"></div>
+<div style="width: 290px; height: 40px; background-color: #fff; display: inline-block;"> &nbsp;&nbsp; </div>
+<!-- adngin-ad_after_prices_rect1-0 -->
+<div id="adngin-ad_after_prices_rect1-0"></div>
+</div>
+</div>
+<!-- Column 1 end -->
+
+<br/>
+<div class="footer_content">
+<a href="https://www.numbeo.com/common/about.jsp">About</a><span class="footer_separator"></span>
+<a href="https://www.numbeo.com/common/in_the_news.jsp">Press</a><span class="footer_separator"></span>
+<a href="https://www.numbeo.com/common/join_community.jsp">Newsletter</a><span class="footer_separator"></span>
+<a href="https://www.numbeo.com/common/api.jsp" rel="nofollow">API</a><p>
+<span style="font-style: italic">
+Copyright &copy; 2009-2022 Numbeo. Your use of this service is subject to our 
+<a href="https://www.numbeo.com/common/terms_of_use.jsp">Terms of Use</a> and 
+<a href="https://www.numbeo.com/common/privacy.jsp">Privacy Policy</a>
+</span></p>
+</div>
+</div> <!-- end of innerWidth --> 
+
+    </body>
+</html>
+
+
+
