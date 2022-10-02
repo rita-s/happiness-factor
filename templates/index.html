@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <script type="text/javascript" src="../static/script.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
     <title>Home</title>
 </head>
 <body>
@@ -14,11 +14,11 @@
         <header class="header box">
             <nav class="nav">
                 <ul>
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
-                    <li><a href="{{ url_for('visualizations') }}">Visualisations</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="visualizations.html">Visualisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,11 +34,11 @@
                         <li class="slide">
                             <img src="../static/images/education.jpg" alt=""/>
                         </li>
-                        <li class="slide">
+                        <li class="slide" data-active>
                             <img src="../static/images/city_background.jpg" alt=""/>
                         </li>
-                        <li class="slide" data-active>
-                            <div class='tableauPlaceholder' id='viz1664722466689' style='position: relative'><noscript><a href='#'><img alt='General ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CostofLivingProject_16647223757330&#47;General&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CostofLivingProject_16647223757330&#47;General' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CostofLivingProject_16647223757330&#47;General&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1664722466689');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                        <li class="slide">
+                            <img src="../static/images/family.jpg" alt=""/>
                         </li>
                         <li class="slide">
                             <img src="../static/images/home.jpg" alt=""/>
@@ -56,13 +56,5 @@
         </footer>
 
     </div>
-
-
-
-
-
-
-
-
 </body>
 </html>

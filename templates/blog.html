@@ -4,65 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/blog.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <script type="text/javascript" src="../static/script.js"></script>
-    <title>Home</title>
+    <script type="text/javascript" src="scripts.js"></script>
+    <title>Blog</title>
 </head>
 <body>
     <div class="container">
         <header class="header box">
             <nav class="nav">
                 <ul>
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
-                    <li><a href="{{ url_for('visualizations') }}">Visualisations</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="visualizations.html">Visualisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <article class="blog box">
-            Blog
-        </article>
-        <main class="main box">
-            <section aria-label="Visualisations">
-                <div class="slider" data-slider>
-                    <button class="slider-btn prev" data-slider-button="prev">&#8701;</button>
-                    <button class="slider-btn next" data-slider-button="next">&#8702;</button>
-                    <ul data-slides>
-                        <li class="slide">
-                            <img src="../static/images/education.jpg" alt=""/>
-                        </li>
-                        <li class="slide">
-                            <img src="../static/images/city_background.jpg" alt=""/>
-                        </li>
-                        <li class="slide" data-active>
-                            <div class='tableauPlaceholder' id='viz1664721283678' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;proj3_first_draft3&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='proj3_first_draft3&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;proj3_first_draft3&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1664721283678');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                        </li>
-                        <li class="slide">
-                            <img src="../static/images/home.jpg" alt=""/>
-                        </li>
-
-                    </ul>
-                </div>
+        <main class="main">
+            <section class="blog">
+                <article class="post p1"></article>
+                <article class="post p2"></article>
+                <article class="post p3"></article>
+                <article class="post p4"></article>
+                <article class="post p5"></article>
+                <article class="post p6"></article>
             </section>
         </main>
-        <aside class="sidebar box">
-            Aside
-        </aside>
         <footer class="footer box">
             <p>&copy; 2022 Happiness Factor | All rights reserved.</p>
         </footer>
 
     </div>
-
-
-
-
-
-
-
-
 </body>
 </html>
