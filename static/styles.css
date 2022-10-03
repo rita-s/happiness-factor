@@ -32,7 +32,12 @@ body {
 
 .nav ul li {
   list-style-type: none;
-  padding: 10px;
+  padding: 1rem 2rem;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .box {
@@ -179,12 +184,6 @@ body {
 /************** Slider ***************/
 .sidebar{
   background: linear-gradient(135deg, rgba(69,57,50,1) 0%, rgba(197,181,161,1) 100%);
-}
-
-/************** Visualisations - Dashboard ***************/
-
-#viz1664765084784{
-  margin-left: 5rem!important;
 }
 /********************************************* MOBILE *********************************************/
 
