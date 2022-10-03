@@ -14,11 +14,11 @@
         <header class="header box">
             <nav class="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="visualizations.html">Visualisations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="{{url_for('home') }}">Home</a></li>
+                    <li><a href="{{url_for('about') }}">About</a></li>
+                    <li><a href="{{url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{url_for('visualizations') }}">Visualisations</a></li>
+                    <li><a href="{{url_for('contact') }}">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -56,7 +56,7 @@
 
 
         <main class="main box">
-            {% comment %} <section aria-label="Visualisations">
+             <section aria-label="Visualisations">
                 <div class="slider" data-slider>
                     <button class="slider-btn prev" data-slider-button="prev">&#8701;</button>
                     <button class="slider-btn next" data-slider-button="next">&#8702;</button>
@@ -76,7 +76,7 @@
 
                     </ul>
                 </div>
-            </section> {% endcomment %}
+            </section>
         </main>
         <aside class="sidebar box">
             <img src="../static/images/banner.jpg" class="image"alt=""/>
