@@ -24,5 +24,30 @@ def visualizations():
 def about():
     return render_template("about.html")
 
+@app.route("/do-you-want--to-be-happy")
+def happy():
+    return render_template("do-you-want-to-be-happy.html")
+
+@app.route("/GNH")
+def gnh():
+    return render_template("gross-national-happiness.html")
+
+@app.route("/happiness-formula")
+def formula():
+    return render_template("happiness-formula.html")
+
+@app.route("/budget")
+def budget():
+    return render_template("how-to-make-a-budget.html")
+
+@app.route("/income")
+def income():
+    return render_template("increase-your-income.html")
+
+@app.route("/theory")
+def theory():
+    return render_template("/theories-of-happiness.html")
+
+
 if __name__ == "__main__":
     app.run()
