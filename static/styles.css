@@ -38,7 +38,6 @@ body {
 .box {
   display: grid;
   place-items: center;
-  border: solid 2px grey;
   padding: 10px;
   color: var(--font-color);
 }
