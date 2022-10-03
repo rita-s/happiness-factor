@@ -18,8 +18,7 @@ Transform:
 * Beautiful Soup was used to perform webscrapping
 
 Load:
-* Data was loaded into xx
-* xx was chosen...
+* Data was loaded into SQL Database.
 
 ## 📚 References:
 1. Tableau: https://public.tableau.com/app/profile/adna3400/viz/CostofLivingProject_16647223757330/maps?publish=yes
