@@ -180,6 +180,12 @@ body {
 .sidebar{
   background: linear-gradient(135deg, rgba(69,57,50,1) 0%, rgba(197,181,161,1) 100%);
 }
+
+/************** Visualisations - Dashboard ***************/
+
+#viz1664765084784{
+  margin-left: 5rem!important;
+}
 /********************************************* MOBILE *********************************************/
 
 .container {

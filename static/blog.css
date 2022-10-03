@@ -21,7 +21,7 @@
 body {
   height: 100vh;
   background-color: #e3e4e6;
-  color: var(--font-color);
+  color: black;
   font-family: var(--font);
 }
 
@@ -38,9 +38,8 @@ body {
 .box {
   display: grid;
   place-items: center;
-  border: solid 2px grey;
   padding: 10px;
-  color: var(--font-color);
+  color: black;
 }
 
 /************** Main ***************/
