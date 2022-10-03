@@ -112,8 +112,8 @@ body {
 /************** Slider ***************/
 
 .slider {
-  width: 47vw;
-  height: 79vh;
+  width: 55vw;
+  height: 90vh;
   position: relative;
 }
 
@@ -176,6 +176,11 @@ body {
   right: 1rem;
 }
 
+
+/************** Slider ***************/
+.sidebar{
+  background: linear-gradient(135deg, rgba(69,57,50,1) 0%, rgba(197,181,161,1) 100%);
+}
 /********************************************* MOBILE *********************************************/
 
 .container {
@@ -264,25 +269,25 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       "h h h h    h h h h     h h h h"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
-      "b b b m    m m m m     m s s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
+      "b b b m    m m m m     m m s s"
       "f f f f    f f f f     f f f f"
     ;
   }
