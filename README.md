@@ -4,7 +4,7 @@
 ## Visualisation Project
 
 ## 📝 Project Description
-### We were comparing World's Economy against the Happiness Index in most world countries as we were curious if 
+### We were comparing World's Economy against the Happiness Index in most world countries as we were curious if there is a relationship between the two.
 
 ### ETL pipeline was created to make the data ready for the analysis.
 
