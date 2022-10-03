@@ -43,42 +43,28 @@ body {
 }
 
 /************** Main ***************/
-.main {
+.main, .post-main {
   margin-top: 10vh;
   display: flex;
   flex-direction: row;
 }
 
-.description,
+.description, .post1-description, .post1-video
 .video {
   width: 45vw;
   padding: 1rem;
 }
 
-.description {
+.description, .post1-description {
   padding-left: 5%;
 }
 
-.video {
+.video, .post1-video {
   padding-right: 2%;
   padding-left: 5%;
 }
 
-.post1-description {
-  padding-left: 5%;
-}
 
-.post1-description,
-.post1-video {
-  width: 45vw;
-  padding: 1rem;
-}
-
-.post1-video {
-  padding-right: 2%;
-  padding-left: 0%;
-
-}
 
 
 
