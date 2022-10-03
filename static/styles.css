@@ -233,6 +233,11 @@ body {
     grid-area: m;
   }
 
+  .visual {
+    height: 200px;
+    width: 100%;
+  }
+
   .sidebar {
     grid-area: s;
   }
