@@ -1,13 +1,8 @@
 const buttons = document.querySelectorAll("[data-slider-button]");
 
 buttons.forEach(button => {
-<<<<<<< HEAD:static/scripts.js
     button.addEventListener("click", () => {
-        const offset = button.dataset.sliderButton === "next" ? 1 : -1;
-=======
-    button.addEventListener("click", () => { 
-        const offset = button.dataset.sliderBtn === "next" ? 1: -1;
->>>>>>> b370ea9 (slider javascript scripts):scripts.js
+        const offset = button.dataset.sliderBtn === "next" ? 1 : -1;
         const slides = button
             .closest("[data-slider]")
             .querySelector("[data-slides]");
