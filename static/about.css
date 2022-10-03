@@ -44,28 +44,88 @@ body {
 }
 
 /************** Main ***************/
-.main{
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: row;
-}
-.description, .video{
-    width: 45vw;
-    padding: 1rem;
+.main {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
 }
 
-.description{
-    padding-left: 5%;
+.description,
+.video {
+  width: 45vw;
+  padding: 1rem;
 }
 
-.video{
-    padding-right: 2%;
-    padding-left: 5%;
+.description {
+  padding-left: 5%;
 }
+
+.video {
+  padding-right: 2%;
+  padding-left: 5%;
+}
+
+.post1-description {
+  padding-left: 5%;
+}
+
+.post1-description,
+.post1-video {
+  width: 45vw;
+  padding: 1rem;
+}
+
+.post1-video {
+  padding-right: 2%;
+  padding-left: 0%;
+
+}
+
+
+
+
 
 /********************************************* MOBILE *********************************************/
 
 .container {
+  height: 90vh;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "h h h h    h h h h     h h h h"
+    "b b b b    b b b b     b b b b"
+    "m m m m    m m m m     m m m m"
+    "s s s s    s s s s     s s s s"
+    "f f f f    f f f f     f f f f"
+  ;
+}
+
+.header {
+  grid-area: h;
+}
+
+.blog {
+  grid-area: b;
+}
+
+.main {
+  grid-area: m;
+}
+
+.sidebar {
+  grid-area: s;
+}
+
+.footer {
+  grid-area: f;
+}
+
+/********************************************* TABLET *********************************************/
+@media(min-width:768px) {
+  .container {
     height: 90vh;
     width: 90%;
     margin: 20px auto;
@@ -74,123 +134,85 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       "h h h h    h h h h     h h h h"
-      "b b b b    b b b b     b b b b"
-      "m m m m    m m m m     m m m m"
-      "s s s s    s s s s     s s s s"
-      "f f f f    f f f f     f f f f"
+      "b b b b    m m m m     m m m m"
+      "b b b b    m m m m     m m m m"
+      "s s s s    m m m m     m m m m"
+      "s s s s    f f f f     f f f f"
     ;
   }
-  
+
   .header {
     grid-area: h;
   }
-  
+
   .blog {
     grid-area: b;
   }
-  
+
   .main {
     grid-area: m;
   }
-  
+
   .sidebar {
     grid-area: s;
   }
-  
+
   .footer {
     grid-area: f;
   }
-  
-  /********************************************* TABLET *********************************************/
-  @media(min-width:768px) {
-    .container {
-      height: 90vh;
-      width: 90%;
-      margin: 20px auto;
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-areas:
-        "h h h h    h h h h     h h h h"
-        "b b b b    m m m m     m m m m"
-        "b b b b    m m m m     m m m m"
-        "s s s s    m m m m     m m m m"
-        "s s s s    f f f f     f f f f"
-      ;
-    }
-  
-    .header {
-      grid-area: h;
-    }
-  
-    .blog {
-      grid-area: b;
-    }
-  
-    .main {
-      grid-area: m;
-    }
-  
-    .sidebar {
-      grid-area: s;
-    }
-  
-    .footer {
-      grid-area: f;
-    }
+}
+
+/********************************************* DESKTOP *********************************************/
+@media(min-width:1080px) {
+  .container {
+    height: 97vh;
+    width: 97%;
+    margin: 5px auto;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      "h h h h    h h h h     h h h h"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "m m m m    m m m m     m m m m"
+      "f f f f    f f f f     f f f f"
+    ;
   }
-  
-  /********************************************* DESKTOP *********************************************/
-  @media(min-width:1080px) {
-    .container {
-      height: 97vh;
-      width: 97%;
-      margin: 5px auto;
-      display: grid;
-      gap: 5px;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-areas:
-        "h h h h    h h h h     h h h h"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "m m m m    m m m m     m m m m"
-        "f f f f    f f f f     f f f f"
-      ;
-    }
-  
-    .header {
-      grid-area: h;
-    }
-  
-    .blog {
-      grid-area: b;
-    }
-  
-    .main {
-      grid-area: m;
-    }
-  
-    .sidebar {
-      grid-area: s;
-    }
-  
-    .footer {
-      grid-area: f;
-    }
+
+  .header {
+    grid-area: h;
   }
+
+  .blog {
+    grid-area: b;
+  }
+
+  .main {
+    grid-area: m;
+  }
+
+  .sidebar {
+    grid-area: s;
+  }
+
+  .footer {
+    grid-area: f;
+  }
+}
