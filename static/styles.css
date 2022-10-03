@@ -44,7 +44,7 @@ body {
   display: grid;
   place-items: center;
   padding: 10px;
-  color: var(--font-color);
+  color: black;
 }
 
 /************** Blog ***************/
