@@ -1,5 +1,5 @@
 # 💰 Does money buy happiness? 
-<img src="https://github.com/rita-s/happiness_factor/blob/master/happiness.png" alt="Project Photo" title="Project Photo" width="30%">
+<img src="https://github.com/rita-s/happiness-factor/blob/master/happiness.png" alt="Project Photo" title="Project Photo" width="30%">
 
 ## Visualisation Project
 
